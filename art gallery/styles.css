@@ -1,0 +1,109 @@
+/* Google Font */
+body {
+    font-family: 'Playfair Display', serif;
+    margin: 0;
+    padding: 0;
+    background: url('images/background.webp') no-repeat;
+    background-size:cover;
+    color: #333;
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    padding: 20px;
+    background-color: rgba(0, 0, 0, 0.7);
+    color: white;
+}
+
+.gallery-title {
+    font-size: 2.5rem;
+}
+
+/* Navigation Bar */
+.nav-bar {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.nav-bar li {
+    display: inline;
+}
+
+.nav-bar a {
+    text-decoration: none;
+    color: white;
+    font-size: 1.2rem;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    transition: all 0.3s ease;
+}
+
+.nav-bar a:hover {
+    background-color: #ff6347;
+    border-radius: 5px;
+}
+
+/* Google Material Icons Styling */
+.material-icons {
+    font-size: 1.5rem;
+    vertical-align: middle;
+}
+
+/* Art Gallery Section */
+.art-section {
+    padding: 50px;
+    text-align: center;
+    background-color: rgba(255, 255, 255, 0.9);
+    margin: 20px;
+    border-radius: 15px;
+}
+
+.art-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    max-width: 1200px;
+    margin: auto;
+}
+
+.art-piece img {
+    max-width: 300px;
+    max-height: 300px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease-in-out;
+}
+
+.art-piece img:hover {
+    transform: scale(1.05);
+}
+
+.art-piece figcaption {
+    font-size: 1.2rem;
+    margin-top: 10px;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 20px;
+    background: #000;
+    color: white;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .nav-bar {
+        flex-direction: column;
+    }
+
+    .gallery-title {
+        font-size: 2rem;
+    }
+}
